@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cadeaus>
+	<age id="0-6 maand">
+		<cadeau id="cadeau 1">
+			<name> Bumba Badfiguren </name>
+			<beschrijving> Lekker spelen in bad met Bumba en zijn vriendjes. Maak ze nat en plak ze tegen de badrand of tegen de badkamertegels. Speel met Bumba, Kiku en Gwido. </beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\0-6 maand\1.jpg</file>
+		</cadeau>
+		<cadeau id="cadeau 2">
+			<name> Lamaze Freddy de vuurvlieg </name>
+			<beschrijving>Deze vriendelijke Lamaze insect heeft een lekker zachte, velours buik. Ook heeft Freddy vleugels boordevol actieve ontdekkingen: een kiekeboe-spiegel, verschillende texturen, een pieper en kraakgeluiden. </beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\0-6 maand\2.jpg</file>
+		</cadeau>
+		<cadeau id="cadeau 3">
+			<name> Lamaze Voel vis </name>
+			<beschrijving>Hoewel dit vrolijke Visje kleiner is dan de Play & Grow speelknuffels van Lamaze, bied de Voel Vis wel dezelfde ontwikkelingsfuncties die van Lamaze verwacht worden, zoals de mooie, diverse materialen en felle kleuren en patronen.</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\0-6 maand\3.jpg</file>
+		</cadeau>
+	</age>
+	<age id="">
+		<cadeau id="cadeau 1">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+		<cadeau id="cadeau 2">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+		<cadeau id="cadeau 3">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+	</age>
+	<age id="">
+		<cadeau id="cadeau 1">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+		<cadeau id="cadeau 2">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+		<cadeau id="cadeau 3">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+	</age>
+	<age id="">
+		<cadeau id="cadeau 1">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+		<cadeau id="cadeau 2">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+		<cadeau id="cadeau 3">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+	</age>
+	<age id="">
+		<cadeau id="cadeau 1">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+		<cadeau id="cadeau 2">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+		<cadeau id="cadeau 3">
+			<name></name>
+			<beschrijving</beschrijving>
+			<file type="jpg">Sinterklaas_website\Afbeeldingen\cadeaus\\1.jpg</file>
+		</cadeau>
+	</age>
+</cadeaus>
