@@ -51,13 +51,9 @@
 
 /* Topnav */
 
-#topnav_image{
-	float:left;
-	width:"50px";	
-}
-
 #topnav	{
 	margin:0px 50px 0px 50px;
+	font:"Comic Sans MS", cursive;
 }
 
 #topnav	a:link		{ color:#FFF;	}
@@ -65,6 +61,12 @@
 #topnav	a:active	{ color:#000;	}
 #topnav	a:focus		{ color:#666;	}
 #topnav	a:hover		{ color:#FFF;	}
+
+#topnav_image{
+	float:left;
+	width:"50px";
+	margin-right:5px;	
+}
 
 #topnav	ul {
 	margin: 0px;
@@ -81,14 +83,14 @@
 }
 
 #topnav ul li a {
+	color:white;
 	display: block;
+	font:"Comic Sans MS", cursive;
 	height: 30px;
-	padding:0px 15px;
-	color: #FFF;
-	background-color:#999;
-	text-decoration: none;
 	line-height: 30px;
+	padding:0px 15px;
 	text-align: center;
+	text-decoration: none;
 }
 
 #topnav_text{
@@ -113,17 +115,18 @@ h2{
 	font-family:"Comic Sans MS", cursive;
 	font-size:18px;
 	text-align:Center;	
-	
 }
 
 h3{
 	font-size:18px;
 	text-decoration:underline;	
 }
+
 #image_center{
 	text-align:center;
 	margin:10px;	
 }
+
 #image_left{
 	float:left;
 	margin:10px;
@@ -145,6 +148,23 @@ h3{
 	height:1000px;
 	width:1000px;
 }
+
+/* ERROR */
+
+#err1{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err2{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err3{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err4{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err5{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err6{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err7{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err8{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err9{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err10{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err11{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err12{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#err13{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
+#fouten{font-family:"Comic Sans MS", cursive; font-weight:bold; float:left; text-align:right; color:#FFF}
 
 /* Form */
 
@@ -199,3 +219,17 @@ select{
 	text-align:center;
 	width:500px;	
 }
+
+table{
+	float:left;
+	margin-left:100px;
+}
+
+table tr td{
+	text-align:center;
+}
+
+table tr td img{
+	margin:5px
+}
+/* Table */

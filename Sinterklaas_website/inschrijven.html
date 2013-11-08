@@ -3,10 +3,11 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-		<link href="CSS/css_sinterklaas.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="CSS/css_sinterklaas.css" rel="stylesheet" type="text/css" media="print">
-		<style type="text/css"></style>        
+	<link href="CSS/css_sinterklaas.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="CSS/css_sinterklaas.css" rel="stylesheet" type="text/css" media="print">
+	<style type="text/css"></style> 
+	<script src="checkInputSendEmail.js"></script> 
+     
 <title>Sinterklaas</title>
 
 </head>
@@ -33,42 +34,128 @@
                 <p>&nbsp;</p>
         </div>
     	<div id="form">
-        	<form>
+        	<form action="" method="post">
             	<fieldset>
                 	<legend>Contact gegevens</legend>
-                    <p><label class="field" for="Voornaam">Voornaam:</label>			<input class="textbox-300" type="text" name="firstname"> <br></p>
-                    <p><label class="field" for="Achternaam">Achternaam:</label>		<input class="textbox-300" type="text" name="lastname"> <br></p>
-                    <p><label class="field" for="Telefoon_nummer">Tel. nummer:</label>	<input class="textbox-300" type="text" name="telnmr"> <br></p>
-                    <p><label class="field" for="Gsm_nummer">Gsm nummer:</label>		<input class="textbox-300" type="text" name="gsmnmr"> <br></p>
-                    <p><label class="field" for="email">email adress:</label>			<input class="textbox-300" type="text" name="email"> <br></p>
+                    <p><label class="field" for="Voornaam">Voornaam:</label>			<input class="textbox-300" type="text" name="firstname"><div id="err1"></div><br></p>
+                    <p><label class="field" for="Achternaam">Achternaam:</label>		<input class="textbox-300" type="text" name="lastname"><div id="err2"></div><br></p>
+                    <p><label class="field" for="Telefoon_nummer">Tel. nummer:</label>	<input class="textbox-300" type="text" name="telnr"><div id="err3"></div><br></p>
+                    <p><label class="field" for="Gsm_nummer">Gsm nummer:</label>		<input class="textbox-300" type="text" name="gsmnr"><div id="err4"></div><br></p>
+                    <p><label class="field" for="email">email adress:</label>			<input class="textbox-300" type="text" name="email"><div id="err5"></div><br></p>
                     <legend>Adress</legend>
-                    <p><label class="field" for="Adress">Adress:</label>				<input class="textbox-300" type="text" name="adress"> <br></p>                    
-                    <p><label class="field" for="Adress_2">Adress 2:</label>			<input class="textbox-300" type="text" name="adress_2"> <br></p>
-                    <p><label class="field" for="Nummer">Nummer:</label>				<input class="textbox-300" type="text" name="number"> <br></p>
-                    <p><label class="field" for="Stad">Stad:</label>					<input class="textbox-300" type="text" name="city"> <br></p>
-                    <p><label class="field" for="Postcode">Postcode:</label>			<input class="textbox-300" type="text" name="zipcode"> <br></p>
-                </fieldset>
-            </form>
-            <p>&nbsp;</p>
-            <form action="">
-            	<fieldset>
+                    <p><label class="field" for="Adress">Adress:</label>				<input class="textbox-300" type="text" name="adress"><div id="err6"></div><br></p>                    
+                    <p><label class="field" for="Adress_2">Adress 2:</label>			<input class="textbox-300" type="text" name="adress_2"><div id="err7"></div><br></p>
+                    <p><label class="field" for="Nummer">Nummer:</label>				<input class="textbox-300" type="text" name="number"><div id="err8"></div><br></p>
+                    <p><label class="field" for="Stad">Stad:</label>					<input class="textbox-300" type="text" name="city"><div id="err9"></div><br></p>
+                    <p><label class="field" for="Postcode">Postcode:</label>			<input class="textbox-300" type="text" name="zipcode"><div id="err10"></div><br></p>
+                    <!--
                     <legend>Aantal kinderen</legend>
-                        <label class="field" for="Aantal kinderen">Aantal kinderen:</label>
-                            <select name="Aantal kinderen">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
+                    <p><label class="field" for="Aantal kinderen" name="aantal_kinderen">Aantal kinderen:</label>	<input class="textbox-300" type="number" name="aantalkinderen" value=""><div id="err11"></div><br></p>
+                    !-->
+                    <legend>Leeftijd kinderen</legend>
+                    <p><label class="field" for="leeftijd">Leeftijd kind:</label>
+                	<select id="leeftijd" onchange="showPresents(this.value)">
+                    	<option value="blank"></option>
+                    	<option value="0-6maand">0 tot 6 maand</option>
+                        <option value="6-12maand">6 tot 12 maand</option>
+                        <option value="1-2jaar">1 tot 2 jaar</option>
+                        <option value="2-3jaar">2 tot 3 jaar</option>
+                        <option value="3-6jaar">3 tot 6 jaar</option>
+                    </select>
+                    <div id="err12"></div>
+                    <div id="0-6maand" style="display:none">
+                        <form action="" method="post">
+                        <legend>Cadeau kiezen</legend>
+                        <table width="300px">
+                        <tr>
+                            <td> <img src="Afbeeldingen/cadeaus/0-6 maand/1.jpg" alt="cadeau 1" width="100"/></td>
+                            <td> <img src="Afbeeldingen/cadeaus/0-6 maand/2.jpg" alt="cadeau 2" width="100"/></td>
+                            <td> <img src="Afbeeldingen/cadeaus/0-6 maand/3.jpg" alt="cadeau 3" width="100"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="cadeau0" value="option10" checked="checked"/></td>
+                            <td><input type="radio" name="cadeau0" value="option20" /></td>
+                            <td><input type="radio" name="cadeau0" value="option30" /></td>
+                        </tr>
+                        </table>
+                        </form>
+                    </div>
+                    <div id="6-12maand" style="display:none">
+                        <form action="" method="post">
+                        <legend>Cadeau kiezen</legend>
+                        <table width="300px">
+                        <tr>
+                            <td> <img src="Afbeeldingen/cadeaus/6-12 maand/1.jpg" alt="cadeau 1" width="100"/></td>
+                            <td> <img src="Afbeeldingen/cadeaus/6-12 maand/2.jpg" alt="cadeau 1" width="100"/></td>
+                            <td> <img src="Afbeeldingen/cadeaus/6-12 maand/3.jpg" alt="cadeau 1" width="100"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="cadeau6" value="option16" checked="checked" /></td>
+                            <td><input type="radio" name="cadeau6" value="option26" /></td>
+                            <td><input type="radio" name="cadeau6" value="option36" /></td>
+                        </tr>
+                        </table> 
+                        </form>
+                    </div>
+                    <div id="1-2jaar" style="display:none">
+                        <form action="" method="post">
+                        <legend>Cadeau kiezen</legend>
+                        <table width="300px">
+                        <tr>
+                            <td> <img src="Afbeeldingen/cadeaus/1-2 jaar/1.jpg" alt="cadeau 1" width="100"/></td>
+                            <td> <img src="Afbeeldingen/cadeaus/1-2 jaar/2.jpg" alt="cadeau 1" width="100"/></td>
+                            <td> <img src="Afbeeldingen/cadeaus/1-2 jaar/3.jpg" alt="cadeau 1" width="100"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="cadeau1" value="option11" checked="checked" /></td>
+                            <td><input type="radio" name="cadeau1" value="option21" /></td>
+                            <td><input type="radio" name="cadeau1" value="option31" /></td>
+                        </tr>
+                        </table> 
+                        </form>
+                    </div>
+                    <div id="2-3jaar" style="display:none">
+                        <form action="" method="post">
+                        <legend>Cadeau kiezen</legend>
+                        <table width="300px">
+                        <tr>
+                            <td> <img src="Afbeeldingen/cadeaus/2-3 jaar/1.jpg" alt="cadeau 1" width="100"/></td>
+                            <td> <img src="Afbeeldingen/cadeaus/2-3 jaar/2.jpg" alt="cadeau 1" width="100"/></td>
+                            <td> <img src="Afbeeldingen/cadeaus/2-3 jaar/3.jpg" alt="cadeau 1" width="100"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="cadeau2" value="option12" checked="checked" /></td>
+                            <td><input type="radio" name="cadeau2" value="option22" /></td>
+                            <td><input type="radio" name="cadeau2" value="option32" /></td>
+                        </tr>
+                        </table> 
+                        </form>
+                    </div>
+                    <div id="3-6jaar" style="display:none">
+                        <form action="" method="post">
+                        <legend>Cadeau kiezen</legend>
+                        <table width="300px">
+                        <tr>
+                            <td> <img src="Afbeeldingen/cadeaus/3-6 jaar/1.jpg" alt="cadeau 1" width="100"/></td>
+                            <td> <img src="Afbeeldingen/cadeaus/3-6 jaar/2.jpg" alt="cadeau 1" width="100"/></td>
+                            <td> <img src="Afbeeldingen/cadeaus/3-6 jaar/3.jpg" alt="cadeau 1" width="100"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="cadeau3" value="option13" checked="checked" /></td>
+                            <td><input type="radio" name="cadeau3" value="option23" /></td>
+                            <td><input type="radio" name="cadeau3" value="option33" /></td>
+                        </tr>
+                        </table> 
+                        </form>
+                    </div>
+                    <div id="submit">
+                        <p>&nbsp;</p>
+                        <input type="button" onclick="check(this.form)" value="Submit">
+                        <!-- <div id="fouten"></div> Used for testing !-->
+                    </div>
+                    <div id="option_1"></div>                   
             	</fieldset>
             </form>
-            <p>&nbsp;</p>
-            <div id="submit">
-                <form>
-                    <input class="submit" type="submit" name="submit" value="Sign me up" />
-                </form>
-                <button id="submit">Submit</button>
-            </div>
 		</div>
 	</div>
     
